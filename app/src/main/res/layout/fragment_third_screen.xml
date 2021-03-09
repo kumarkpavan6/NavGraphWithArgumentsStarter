@@ -3,10 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFEB3B"
+    android:background="#FFAB3C"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".SecondScreen">
+    tools:context=".ThirdScreen">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
@@ -15,12 +15,12 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="20dp"
-        android:text="2"
+        android:text="3"
         android:textSize="100sp" />
 
     <Button
-        android:id="@+id/btnGoforward"
+        android:id="@+id/btnGoBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="GO Forward" />
+        android:text="GO BACK" />
 </LinearLayout>

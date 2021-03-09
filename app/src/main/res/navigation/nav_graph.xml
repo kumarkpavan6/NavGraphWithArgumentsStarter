@@ -19,9 +19,6 @@
         android:name="com.example.navgraphwithargumentsstarter.SecondScreen"
         android:label="fragment_second_screen"
         tools:layout="@layout/fragment_second_screen" >
-        <action
-            android:id="@+id/action_goHome"
-            app:destination="@id/firstFragment" />
         <argument
             android:name="name"
             app:argType="string"
@@ -30,5 +27,25 @@
             android:name="gpa"
             app:argType="float"
             android:defaultValue="0.0" />
+        <action
+            android:id="@+id/action_secondScreen_to_thirdScreen"
+            app:destination="@id/thirdScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdScreen"
+        android:name="com.example.navgraphwithargumentsstarter.ThirdScreen"
+        android:label="fragment_third_screen"
+        tools:layout="@layout/fragment_third_screen" >
+        <argument
+            android:name="name"
+            app:argType="string"
+            android:defaultValue='""' />
+        <argument
+            android:name="gpa"
+            app:argType="float"
+            android:defaultValue="0.0" />
+        <action
+            android:id="@+id/action_thirdScreen_to_firstFragment"
+            app:destination="@id/firstFragment" />
     </fragment>
 </navigation>
